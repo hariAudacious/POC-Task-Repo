@@ -1,0 +1,39 @@
+*{
+    background-color: #fff
+
+}
+.main{
+    width: 30vw;
+    height: 70vh;
+    margin: 15vh 35vw;
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.main > div{
+    padding: 0px 50px;
+}
+.Heading{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.button {
+    padding: 10px 18px;
+    font-size: 15px;
+    background: #1a62ce;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    color: #f4f4f4;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+.button:focus {
+    box-shadow: 0px 0px 0px 1px rgb(103, 103, 230);
+}
+
+p{
+    color: red;
+}
