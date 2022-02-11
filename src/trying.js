@@ -1,23 +1,21 @@
 import React, { useState, useEffect } from "react";
+import { useCookies } from 'react-cookie';
+import _ from "lodash"
 const Trying = () => {
 
-    const [value, setValue] = useState(()=>myfunc())
-    const [counter, setCounter] = useState();
-    const myfunc = () => {
-        const a = "hariom"
-        setValue(a)
-    }
-    useEffect(() => {
-        console.log(value)
-     }, [value])
-
-    // const doSomething = () => {
-    //   setCounter(123);
-    // }
-
-    // useEffect(() => {
-    //    console.log('Do something after counter has changed', counter);
-    // }, [counter]);
-    return <></>
+ 
+  // var users = [
+  //   { 'user': 'barney', 'age': 36, 'active': false },
+  //   { 'user': 'fred',   'age': 40, 'active': false }
+  // ];
+  // _.filter(users,function() {})  
+    const [cookies, setCookie, removeCookie] = useCookies(['Poc-User-Data']);
+    if (!cookies) {
+        console.log("There is no anything in cookies",cookies)
+         }else{
+           console.log("There is Something in Cookies",cookies)
+         }
+return<></>
+ 
 }
 export default Trying

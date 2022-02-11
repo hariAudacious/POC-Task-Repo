@@ -1,9 +1,22 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import styles from "./styles.module.scss"
+import { useCookies } from 'react-cookie';
+import {Navigate, useNavigate} from "react-router-dom"
 
 const BlogList = () => {
+  const navigate = useNavigate()
+  const [cookies, setCookie, removeCookie] = useCookies(['Poc-User-Data']);
+
+
+
+const handleClick = () =>{
+ console.log("handleClicked")
+  removeCookie('Poc-User-Data')
+}
+
   return (
     <div className={styles.main}>
+      <button className={styles.glow_on_hover} onClick={handleClick} >LogOut</button>
       <div className={styles.movie_card} id={styles["bright"]}>
         <div className={styles.info_section}>
           <div className={styles.movie_header}>
@@ -17,13 +30,6 @@ const BlogList = () => {
             <p className={styles.text}>
               Set in a world where fantasy creatures live side by side with humans. A human cop is forced to work with an Orc to find a weapon everyone is prepared to kill for.
             </p>
-          </div>
-          <div className={styles.movie_social}>
-            <ul>
-              {/* <li className={styles.material-icons}>share</li>
-        <li className={styles.material-icons}></li>
-        <li className={styles.material-icons}>chat_bubble</li> */}
-            </ul>
           </div>
         </div>
         <div className={`${styles.blur_back} ${styles.bright_back}`}></div>
@@ -43,13 +49,6 @@ const BlogList = () => {
               Lara Croft, the fiercely independent daughter of a missing adventurer, must push herself beyond her limits when she finds herself on the island where her father disappeared.
             </p>
           </div>
-          <div className={styles.movie_social}>
-            <ul>
-              {/* <li><i className={styles.material-icons}>share</i></li>
-        <li><i className={styles.material-icons}></i></li>
-        <li><i className={styles.material-icons}>chat_bubble</i></li> */}
-            </ul>
-          </div>
         </div>
         <div className={`${styles.blur_back} ${styles.tomb_back}`} ></div>
       </div>
@@ -67,13 +66,6 @@ const BlogList = () => {
             <p className={styles.text}>
               T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, but his claim is challenged by a vengeful outsider who was a childhood victim of T'Challa's father's mistake.
             </p>
-          </div>
-          <div className={styles.movie_social}>
-            {/* <ul>
-        <li><i className={styles.material-icons}>share</i></li>
-        <li><i className={styles.material-icons}></i></li>
-        <li><i className={styles.material-icons}>chat_bubble</i></li>
-      </ul> */}
           </div>
         </div>
         <div className={`${styles.blur_back} ${styles.ave_back}`}></div>
