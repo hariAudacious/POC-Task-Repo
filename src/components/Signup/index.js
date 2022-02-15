@@ -1,12 +1,11 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Styles from "./styles.module.scss"
 import axios from 'axios';
-import cookie from "react-cookie";
 import { Icon } from 'react-icons-kit'
 import { eye } from 'react-icons-kit/feather/eye'
 import { eyeOff } from 'react-icons-kit/feather/eyeOff'
 import { Link, useNavigate } from 'react-router-dom'
-import { useCookies } from 'react-cookie';
+import Cookies from 'js-cookie';
 
 const SignUp = () => {
   const navigate = useNavigate()
@@ -19,9 +18,6 @@ const SignUp = () => {
   const [formErrors, setFormErrors] = useState({});
   const [type, setType] = useState('password');
   const [icon, setIcon] = useState(eyeOff);
-  const [cookies, setCookie] = useCookies(['user']);
-
-  const { firstName, lastName, email, password } = formValues
 
   const handleChange = (e) => {
     const name = e.target.name
@@ -31,22 +27,20 @@ const SignUp = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(formValues);
     const errors = validate(formValues)
-    if (Object.keys(errors).length ) {
+    if (Object.keys(errors).length) {
       setFormErrors(errors)
       return
     }
     try {
       await axios.post(`http://localhost:3333/users/`, formValues)
-      setCookie('Poc-User-Data', JSON.stringify({formValues}),{path:'/'})  
-      navigate("/dashboard/list") 
+      Cookies.set('Poc-User-Data', JSON.stringify({ formValues }))
+      navigate("/dashboard/list")
     } catch (error) {
       console.log("Something Went Wrong")
     }
   };
 
-  // console.log(formValues); 
   const validate = (values) => {
     //  console.log(values.firstName);
     const errors = {};
@@ -85,7 +79,6 @@ const SignUp = () => {
     }
   }
 
-
   return <div className={Styles.container}>
 
     <form onSubmit={handleSubmit} >
@@ -114,7 +107,7 @@ const SignUp = () => {
 
         <div className="input-group mb-3">
           <div className={Styles.input_field}>
-            <input type={type} value={formValues.password}  name='password' onChange={handleChange} placeholder='password' autoComplete='off' />
+            <input type={type} value={formValues.password} name='password' onChange={handleChange} placeholder='password' autoComplete='off' />
             <span onClick={handleToggle}><Icon icon={icon} size={25} /></span>
           </div>
         </div>

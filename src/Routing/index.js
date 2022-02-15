@@ -3,17 +3,15 @@ import SignUp from '../components/Signup';
 import LogIn from '../components/Login';
 import BlogDetails from '../components/Dashboard/BlogDetails';
 import BlogList from '../components/Dashboard/BlogList';
-import {Routes,Route,Navigate} from "react-router-dom"
-import { useCookies } from 'react-cookie';
+import {Routes,Route} from "react-router-dom"
 
 const Main = () => {
-  const isLogin = true
 return <div>
       <Routes>
         <Route path='/' element={<SignUp/>}/>
         <Route path='/login' element={<LogIn/>}/>
-        <Route path="/dashboard/list" element={isLogin ? <BlogList/> : <Navigate to="/" />}/>
-        <Route path='/dashboard/details' element={<BlogDetails/>}/>
+        <Route path='/dashboard/list' element={<BlogList/>}/>
+        <Route path='/dashboard/details/:id' element={<BlogDetails/>}/>
       </Routes>
   </div>;
 };

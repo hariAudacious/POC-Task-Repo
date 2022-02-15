@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react';
 import Styles from "./styles.module.scss"
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import _ from "lodash"
+import Cookies from 'js-cookie';
 import { Icon } from 'react-icons-kit'
 import { eye } from 'react-icons-kit/feather/eye'
 import { eyeOff } from 'react-icons-kit/feather/eyeOff'
 import { useNavigate } from 'react-router-dom';
-import { useCookies } from 'react-cookie';
 
 const LogIn = () => {
   const navigate = useNavigate()
-
   const [formValues, setFormValues] = useState({
     email: "",
     password: ""
@@ -19,31 +19,27 @@ const LogIn = () => {
   const [apiData, setApiData] = useState();
   const [type, setType] = useState('password');
   const [icon, setIcon] = useState(eyeOff);
-  const [cookies, setCookie, removeCookie] = useCookies(['Poc-User-Data']);
-
-  // useEffect(() => {
-  //   removeCookie('Poc-User-Data' )
-  // },[])
 
   const getData = async () => {
     try {
-      const data = await axios.get("http://localhost:3333/users/")
-      setApiData(data)
+      const allData = await axios.get("http://localhost:3333/users/")
+      setApiData(allData.data)
     } catch (error) {
       console.log("Something Went Wrong")
     }
   }
-  
+  // console.log(apiData)
 
   useEffect(() => {
     if (!apiData) {
       getData()
     } else {
-      const allApiEmails = apiData.data.map(({ email }) => { return (email) })
-      const allApiPasswords = apiData.data.map(({ password }) => { return (password) })
-      const EmailChecker = allApiEmails.includes(formValues.email)
-      const PasswordChecker = allApiPasswords.includes(formValues.password)
-      if (EmailChecker == true, PasswordChecker == true) {
+      const allApiEmails = _.map(apiData,"email")
+      const allApiPasswords =  _.map(apiData,"password")
+      const EmailChecker = _.includes(allApiEmails,formValues.email)
+      const PasswordChecker = _.includes(allApiPasswords,formValues.password)
+      if (EmailChecker == true && PasswordChecker == true) {
+        Cookies.set('Poc-User-Data', JSON.stringify({ formValues }))
         navigate("/dashboard/list")
       }
     }
@@ -89,7 +85,6 @@ const LogIn = () => {
   return <div className={Styles.container}>
     <form onSubmit={handleSubmit} >
       <h4 className={Styles.Heading}>LogIn Here</h4>
-
       <div>
         <div className="input-group mb-3">
           <div className={Styles.input_field}>

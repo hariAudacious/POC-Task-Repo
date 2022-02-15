@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { useCookies } from 'react-cookie';
 import _ from "lodash"
-const Trying = () => {
+import {Navigate, useNavigate} from "react-router-dom"
+import Cookies from "js-cookie";
 
+const Trying = () => {
  
-  // var users = [
-  //   { 'user': 'barney', 'age': 36, 'active': false },
-  //   { 'user': 'fred',   'age': 40, 'active': false }
-  // ];
-  // _.filter(users,function() {})  
-    const [cookies, setCookie, removeCookie] = useCookies(['Poc-User-Data']);
-    if (!cookies) {
-        console.log("There is no anything in cookies",cookies)
-         }else{
-           console.log("There is Something in Cookies",cookies)
-         }
+ const  objArray = [ { name: "Hariom", email: "h@gmail.com"},
+             { name: "Mohit", email: "m@gmail.com"},    
+             { name: "Anjli", email: "a@gmail.com"},    
+             { name: "Jyoti", email: "j@gmail.com"},    
+             { name: "Kalyani", email: "k@gmail.com"},    
+             { name: "Dolly", email: "d@gmail.com"} 
+             ];
+    const allData = _.map(objArray,"email")
+	const mailchecker = _.includes(allData,"m@gmail.com")
+    // console.log(mailchecker)
 return<></>
  
 }
