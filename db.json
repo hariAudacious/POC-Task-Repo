@@ -4,85 +4,36 @@
       "firstName": "Hariom",
       "lastName": "Sharma",
       "email": "hari001204@gmail.com",
-      "password": "123456789",
+      "password": "6264898291",
       "id": 1
     },
     {
-      "firstName": "Muskan",
-      "lastName": "Singh",
-      "email": "m@gmail.com",
-      "password": "987654321",
+      "firstName": "Vishal",
+      "lastName": "Chouhan",
+      "email": "v@gmail.com",
+      "password": "46456131",
       "id": 2
-    },
-    {
-      "firstName": "Ram",
-      "lastName": "lakhan",
-      "email": "r@gmail.com",
-      "password": "963258741",
-      "id": 3
-    },
-    {
-      "firstName": "Raju",
-      "lastName": "Kaju",
-      "email": "raj@gmail.com",
-      "password": "777888999",
-      "id": 4
-    },
-    {
-      "firstName": "Om",
-      "lastName": "Baba",
-      "email": "om@gmail.com",
-      "password": "445566456",
-      "id": 5
-    },
-    {
-      "firstName": "Raju",
-      "lastName": "baba",
-      "email": "r@gmail.com",
-      "password": "332211321",
-      "id": 6
-    },
-    {
-      "firstName": "aarti",
-      "lastName": "Yadav",
-      "email": "aarti@gmail.com",
-      "password": "999666333",
-      "id": 7
-    },
-    {
-      "firstName": "harsh",
-      "lastName": "panchal",
-      "email": "harshu@gmail.com",
-      "password": "777444111",
-      "id": 8
-    },
-    {
-      "firstName": "Roshni",
-      "lastName": "Chanderiya",
-      "email": "roshni@gmail.com",
-      "password": "778899445566",
-      "id": 9
     },
     {
       "firstName": "Aarti",
       "lastName": "yadav",
-      "email": "a@gmail.com",
-      "password": "741258963",
-      "id": 10
+      "email": "aarti@gmail.com",
+      "password": "7898654321",
+      "id": 3
     },
     {
-      "firstName": "gffgh",
-      "lastName": "hjfkhuj",
-      "email": "fghjkmh@gmail.com",
-      "password": "fydxjhngfh",
-      "id": 11
+      "firstName": "Sonu",
+      "lastName": "Bamaniya",
+      "email": "sonu@gmail.com",
+      "password": "23879462387523",
+      "id": 4
     },
     {
-      "firstName": "Ankush",
-      "lastName": "hamine",
-      "email": "ankush@gmail.com",
-      "password": "123456789",
-      "id": 12
+      "firstName": "Dolly",
+      "lastName": "Bisen",
+      "email": "dolly@gmail.com",
+      "password": "dolly@1234567",
+      "id": 5
     }
   ],
   "bikes": [

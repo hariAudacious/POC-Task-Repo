@@ -1,28 +1,25 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import styles from "./styles.module.scss"
 const BlogDetails = () => {
   const { id } = useParams()
   const navigate = useNavigate()
   const [allBikeData, setAllBikeData] = useState([])
-
   useEffect(() => {
     getData()
   }, [])
-
   const getData = async () => {
     const { data } = await axios.get(
       `http://localhost:3333/bikes/${id}`
     );
     setAllBikeData(data)
   }
-
-  const handleClick = () =>{
+  const handleClick = () => {
     navigate("/dashboard/list")
   }
   return (
-    <div className={styles.main}>
+    <div>
       <table id={styles["customers"]}>
         <tr>
           <td>1.</td>
@@ -60,11 +57,7 @@ const BlogDetails = () => {
           <td>{allBikeData.launchingYear}</td>
         </tr>
       </table>
-     
-<button class={styles.button_64} onClick={handleClick}><span class="text"> Back To Home</span></button>
-
-
-
+      <button class={styles.button_64} onClick={handleClick}><span class="text"> Back To Home</span></button>
     </div>
   )
 }
