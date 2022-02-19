@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { BsArrowRightCircle } from "react-icons/bs";
 import styles from "./styles.module.scss"
 import { Link } from "react-router-dom"
 import axios from 'axios'
@@ -26,16 +25,30 @@ const BlogList = () => {
     navigate("/")
   }
   return (<>
-    <button className={styles.glow_on_hover} onClick={handleClick} >LogOut</button>
-    {allBikeData.map(({ bikeName, about, path, id }) => (
-      <div className={styles.main} key={bikeName}>
-        <img className={styles.image} src={path} />
-        <div className={styles.details}>
-          <h1 className={styles.bike}>{bikeName} <Link to={`/dashboard/details/${id}`}><BsArrowRightCircle /></Link></h1>
-          <p className={styles.about} >{about}</p>
-        </div>
-      </div>
-    ))}
+     <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <div className="container-fluid">
+                    <span className="navbar-brand mb-0 h1">POC</span>
+                    <button className="btn btn-danger" type="submit">Logout</button>
+                </div>
+            </nav>
+            <div className='container'>
+                <div className='row'>
+        {allBikeData.map(({ bikeName, about, path, id }) => (
+                    <div className={ `col-sm-4 ${styles.cardslist}`} key={bikeName}>
+                        <div className="card">
+                            <div className={styles.fiximage}>
+                                <img src={path} className="card-img-top" alt="First Image of my card" />
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title">{bikeName}</h5>
+                                <p className={`card-text ${styles.details}`} >{about}</p>
+                                <Link to={`/dashboard/details/${id}`}><p className="btn btn-primary">More Info....</p></Link>
+                            </div>
+                        </div>
+                    </div>
+                    ))}
+                </div>
+            </div>
   </>)
 }
 export default BlogList

@@ -13,6 +13,13 @@
       "email": "ramji@gmail.com",
       "password": "987456321",
       "id": 8
+    },
+    {
+      "firstName": "dfhbfgndfg",
+      "lastName": "sfdghndgnmfdhj",
+      "email": "jnmk@gmail.com",
+      "password": "123456789",
+      "id": 9
     }
   ],
   "bikes": [
@@ -24,8 +31,8 @@
       "marketPrice": "1.45 lakh",
       "weight": "144-150kg",
       "launchingYear": "1999",
-      "about": "The Bajaj Pulsar is a range of motorcycles manufactured by Bajaj Auto in India.  It was developed by the product engineering division of Bajaj Auto in association with Tokyo R&D,[1] and later with motorcycle designer Glynn Kerr. A variant of the bike, the Pulsar 200NS was launched in 2012, but it was suspended for some time (reintroduced in early 2017 with BS IV Emission compliance and renamed the NS200).[2] With average monthly sales of around 86,000 units in 2011, Pulsar claimed a 2011 market share of 47% in its segment.",
-      "path": "https://cdn.bajajauto.com/-/media/Images/bajajauto/brands/bajaj-bikes/pulsar/pulsar-125/variants/pulsar-125Price-img.ashx",
+      "about": "The Bajaj Pulsar is a range of motorcycles manufactured by Bajaj Auto in India.",
+      "path": "https://cdn.autoportal.com/bp-v3/img/models/88/9/bajaj-pulsar-1464785923.jpg",
       "id": 1
     },
     {
@@ -36,8 +43,8 @@
       "marketPrice": "1.87-2.18 lakh",
       "weight": "192-195kg",
       "launchingYear": "1932",
-      "about": "The Royal Enfield Bullet was originally an overhead-valve single-cylinder four-stroke motorcycle made by Royal Enfield in Redditch, Worcestershire, now produced by Royal Enfield (India) at Chennai, Tamil Nadu, a company originally founded by Madras Motors to build Royal Enfield motorcycles under licence in India. The Royal Enfield Bullet has the longest unchanged production run of any motorcycle having remained continuously in production since 1948.[1][2] The Bullet marque is even older, and has passed 75 years of continuous production.",
-      "path": "https://i.pinimg.com/originals/3c/8a/5f/3c8a5f5f7ceebb98ca1f5859414a7da6.jpg",
+      "about": "The Royal Enfield Bullet was originally an four-stroke motorcycle made by Royal Enfield",
+      "path": "https://cdn.autoportal.com/bp-v3/img/models/cc/1/royal-enfield-classic-350-1464785917.png",
       "id": 2
     },
     {
@@ -48,8 +55,8 @@
       "marketPrice": "1.09 lakh",
       "weight": "137-174kg",
       "launchingYear": "2006",
-      "about": "The TVS Apache is a brand of commuter bikes made by TVS Motors in India. There are 5 new Apache models on offer with price starting from Rs. 95,000 (ex-showroom). The cheapest model under the series is TVS Apache RTR 160 with 159.7cc engine generating 15.3 bhp of power, whereas the most expensive model is TVS Apache RR310 with 312.2cc engine generating 33 bhp of power.",
-      "path": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5VuFN9e2ZVVG9MV2Huu_yu1PrzDJ2nGyRxWVtuayGi7AxDUB4Ar_AXi7-STApYLcDMQE&usqp=CAU",
+      "about": "The TVS Apache is a brand of commuter bikes made by TVS Motors in India.",
+      "path": "https://cdn.autoportal.com/bp-v3/img/models/4d/1/tvs-apache-1542888363.jpeg",
       "id": 3
     },
     {
@@ -60,8 +67,8 @@
       "marketPrice": "1.47lakh",
       "weight": "139-154kg",
       "launchingYear": "2012",
-      "about": "KTM AG (Kraftfahrzeug Trunkenpolz Mattighofen, formerly KTM Sportmotorcycle AG[4][5]) is an Austrian bicycle, motorcycle and sports car manufacturer owned by Pierer Mobility AG & Indian manufacturer Bajaj Auto International Holdings BV. It was formed in 1992 but traces its foundation to as early as 1934",
-      "path": "https://images.news18.com/ibnlive/uploads/2019/06/KTM-RC-1251.jpg?impolicy=website&width=510&height=356",
+      "about": "KTM AG is an Austrian bicycle manufacturer Bajaj Auto International Holdings BV",
+      "path": "https://cdn.autoportal.com/bp-v3/img/models/b8/b/img-5b85019b6c054.jpg",
       "id": 4
     },
     {
@@ -72,8 +79,8 @@
       "marketPrice": "1.69-1.91 lakh",
       "weight": "170kg",
       "launchingYear": "2018",
-      "about": "JAWA (Czech pronunciation: [java]) is a motorcycle and moped manufacturer founded in Prague, Czechoslovakia in 1929 by František Janeček,[2] who bought the motorcycle division of Wanderer. The name JAWA was established by concatenating the first letters of Janeček and Wanderer.[3] In the past, especially in the 1950s, JAWA was one of the top motorcycle manufacturers and exported its 350 model into over 120 countries.[4] The best known model was the 350 Pérák and in the 1970s the 350 Californian. It appeared in typical black and red coloring from California to New Zealand ",
-      "path": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/55119/jawa-standard-right-front-three-quarter1.jpeg?wm=0",
+      "about": "JAWA is a motorcycle and moped manufacturer founded in Prague.",
+      "path": "https://cdn.autoportal.com/bp-v3/img/models/bc/1/main.jpg",
       "id": 5
     },
     {
@@ -84,8 +91,8 @@
       "marketPrice": "1.58 lakh",
       "weight": "142kg",
       "launchingYear": "2008",
-      "about": "The Yamaha YZF R15 V3 is powered by a 155 cc air-cooled engine which produces of power. It has a fuel tank of 11 L and a . The Yamaha YZF R15 V3 starts at Rs 1.57 and goes up to Rs 1.59 Lakh (ex-showroom, Delhi). It is available in five variants.",
-      "path": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX_sWLO63qnhaZy3Tzu0RczwDpdCctyS6mZg&usqp=CAU",
+      "about": "The Yamaha YZF R15 V3 is powered by a 155 cc air-cooled engine.",
+      "path": "https://cdn.autoportal.com/bp-v3/img/models/3f/d/13.jpg",
       "id": 6
     },
     {
@@ -96,8 +103,8 @@
       "marketPrice": "1.32 lakh",
       "weight": "142kg",
       "launchingYear": "2021",
-      "about": "Honda CB Hornet 160R last recorded price begun from ₹ 82,537 (avg. ex-showroom price) in India. Honda CB Hornet 160R was available in 4 variants - STD, CBS, ABS - Std, ABS - Dlx and 5 colours.",
-      "path": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-1zfDBiosev2gtCC2R7rWL-gt6s_vUmgaNA&usqp=CAU",
+      "about": "Honda CB Hornet 160R last recorded price begun from ₹ 82,537 in India.",
+      "path": "https://cdn.autoportal.com/bp-v3/img/models/3b/c/honda-cb-hornet-160r-special-edition_827x510_51471327860%20(1).jpg",
       "id": 7
     },
     {
@@ -108,9 +115,21 @@
       "marketPrice": "1.63 lakh",
       "weight": "167-211kg",
       "launchingYear": "2012",
-      "about": "The Honda CBR is a brand of bikes made by Honda two wheeler manufacturer in India. There are 1 CBR models on offer with price starting from Rs. 8,94,672 (avg. Ex-showroom). The cheapest model under the series is Honda CBR 650R with 648.72cc engine generating 85.82 bhp of power. Whereas the most expensive model is Honda CBR 650R with 648.72cc engine generating 85.82 bhp of power.The Honda CBR brand has always been known for its sharp styling, refined engine and great performance. Over the years, Honda launched many bikes under the CBR brand. In India",
+      "about": "The Honda CBR is a brand of bikes made by Honda two wheeler manufacturer in India.",
       "path": "https://cdn.autoportal.com/bp-v3/img/models/3a/a/honda-cbr-250r-1521550264.png",
       "id": 8
+    },
+    {
+      "bikeName": "DOMINAR",
+      "companyName": "Bajaj",
+      "colors": "Blue ,Green,Gray",
+      "mileage": "27 km/l",
+      "marketPrice": "2.12 Lakh ",
+      "weight": "184-187 kg",
+      "launchingYear": "2016",
+      "about": "Bajaj Dominar is motorcycle which suits need of every aspirant who seeks for style aspects.",
+      "path": "https://cdn.autoportal.com/bp-v3/img/models/76/a/13.png",
+      "id": 9
     }
   ]
 }
