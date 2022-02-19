@@ -1,39 +1,18 @@
 {
   "users": [
     {
-      "firstName": "Hariom",
-      "lastName": "Sharma",
-      "email": "hari001204@gmail.com",
-      "password": "6264898291",
-      "id": 1
+      "firstName": "Jagat",
+      "lastName": "Ke Malik",
+      "email": "jagat@gmail.com",
+      "password": "1234568987",
+      "id": 7
     },
     {
-      "firstName": "Vishal",
-      "lastName": "Chouhan",
-      "email": "v@gmail.com",
-      "password": "46456131",
-      "id": 2
-    },
-    {
-      "firstName": "Aarti",
-      "lastName": "yadav",
-      "email": "aarti@gmail.com",
-      "password": "7898654321",
-      "id": 3
-    },
-    {
-      "firstName": "Sonu",
-      "lastName": "Bamaniya",
-      "email": "sonu@gmail.com",
-      "password": "23879462387523",
-      "id": 4
-    },
-    {
-      "firstName": "Dolly",
-      "lastName": "Bisen",
-      "email": "dolly@gmail.com",
-      "password": "dolly@1234567",
-      "id": 5
+      "firstName": "Rammmm ji",
+      "lastName": "Mataa Sita ji",
+      "email": "ramji@gmail.com",
+      "password": "987456321",
+      "id": 8
     }
   ],
   "bikes": [

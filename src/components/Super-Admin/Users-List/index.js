@@ -29,7 +29,6 @@ const SuperAdmin = () => {
   useEffect(() => {
     getApi()
     if (!cookieChecker) {
-      // console.log("No User");
       navigate("/superadmin")
     }
   }, [])
@@ -40,7 +39,6 @@ const SuperAdmin = () => {
     setUsersData(data)
   }
   const handleDelete = async (id) => {
-    // console.log(id)
     await axios.delete(`http://localhost:3333/users/${id}`)
     const deletedUser = usersData.filter((item) => {
       return item.id !== id;
@@ -52,7 +50,6 @@ const SuperAdmin = () => {
     setUser(currentUser);
   });
   const handleLogOut = () => {
-    // alert("Clicked")
     signOut(auth);
     navigate("/superadmin/login")
     Cookies.remove('Poc-SuperAdmin-Data')
